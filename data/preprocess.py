@@ -24,7 +24,7 @@ def main():
     write_ar = True
     prev_line = "" #keeps track of the previous line
 
-    with open("raw_multilingual_parallel/corpus.txt") as f: 
+    with open("raw_multilingual_data/corpus.txt") as f: 
         lines = f.readlines()
 
         for line_idx, line in enumerate(lines):
