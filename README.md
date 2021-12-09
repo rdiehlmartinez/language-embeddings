@@ -14,15 +14,19 @@ We also provide tooling for analyzing the resulting embeddings visually (PCA plo
 
 ## Loading in data 
 Run 
-    ./data/get_data.sh && python3 ./data/preprocess.py 
+```
+./data/get_data.sh && python3 ./data/preprocess.py 
+```
 
 This will load in the dataset and generate a preprocessed dataset in the /data folder. 
 
 ## Running embedding extraction 
 Run 
-    vitualenv -p python3 env && source env/bin/activate
-    pip install -r requirements/env_embeddings_extractor_requirements.txt 
-    python3 embeddings_extractor.py 
+```
+vitualenv -p python3 env && source env/bin/activate
+pip install -r requirements/env_embeddings_extractor_requirements.txt 
+python3 embeddings_extractor.py 
+```
 
 This will dump out a pickle file in the root directory with the computed embeddings. 
 The pickle file is a dictionary object of the form: 
@@ -30,9 +34,5 @@ The pickle file is a dictionary object of the form:
 
 ## Plotting Anaylsis 
 Analysis is done in a jupyter notebook that can be found in the analysis folder. 
-In
-    requirements/env_plot_requirements.txt
-
-we provide the requirements for the environment required to run analysis with our 
-jupyter notebook.
+In ```requirements/env_plot_requirements.txt``` we provide the requirements for the environment required to run analysis with our jupyter notebook.
 
